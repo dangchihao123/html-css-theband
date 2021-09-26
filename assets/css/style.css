@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wapper {
+    overflow: hidden;
+}
+
+.color-while {
+    color: white;
+}
+
+.wapper {}
+
+.header {
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+    display: block;
+}
+
+.nav {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav>li {
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.nav>li>a {
+    text-transform: uppercase;
+}
+
+.nav>li:hover>a {
+    color: black;
+    background-color: #ccc;
+}
+
+.nav>li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav li a,
+.nav>li>a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 24px;
+    line-height: 46px;
+    display: block;
+}
+
+.nav .subnav li a {
+    color: black;
+    padding: 0 16px;
+}
+
+.nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+.nav .icon-subnav {
+    font-size: 14px;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    background: #fff;
+    list-style-type: none;
+}
+
+.header .btn-menu {
+    float: right;
+    line-height: 46px;
+    /* padding: 0 23px; */
+    padding: 0px 14px;
+}
+
+.header .btn-search {
+    float: right;
+    line-height: 46px;
+    padding: 0 23px;
+}
+
+.header .btn-menu:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.header .btn-search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.header .icon-menu {
+    display: none;
+}
+
+.header .btn-menu,
+.header .btn-icon {
+    font-size: 16px;
+    color: white;
+
+}
+
+.slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('https://cluballiance.aaa.com/-/media/Images/Global/AAA-Content-Hub/Explore/Central-US/Chicago/Slideshow/Cloud-Gate_1140x460.ashx') top left / cover no-repeat;
+    /* background-image: url('https://gov-civ-guarda.pt/img/geography-travel/47/chicago.jpg'); */
+}
+
+.text-content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 48px;
+    color: white;
+    /* left:50%;
+ transform:translateX(-50%); */
+    text-align: center;
+}
+
+.text-title {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.text-descriptin {
+    font-size: 15px;
+    color: #fff;
+}
+
+.content {}
+
+.content .content-section {
+    width: 800px;
+    margin: auto;
+    max-width: 100%;
+    padding: 64px 16px;
+}
+
+.content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.content .section-sub-heading {
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.4;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.content .about-text {
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content .members-info {
+    display: flex;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.content .member-item {
+    width: calc(100% / 3);
+}
+
+.content .member-name {
+    margin: 15px 0;
+}
+
+.content .member-img {
+    width: 153px;
+    border-radius: 3px;
+    margin: 0 0 16px;
+}
+
+.ticket-section {
+    background: black;
+}
+
+.ticket-section .ticket-list {
+    background: white;
+    list-style: none;
+}
+
+.ticket-section .ticket-list li {
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-section .sold-out {
+    background: #f44336;
+    margin-left: 16px;
+    padding: 3px 8px;
+    color: white;
+}
+
+
+.ticket-section .quantity {
+    float: right;
+    width: 24px;
+    height: 22px;
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 16px;
+    padding: 0 8px;
+}
+
+.ticket-section .places-list {
+    display: flex;
+    padding: 32px 8px;
+    margin: 0 -16px
+}
+
+.ticket-section .places-item {
+    width: 33.333%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.ticket-section .place-img {
+
+    width: 100%;
+    display: block;
+}
+
+.ticket-section .place-img:hover {
+    opacity: 0.6;
+}
+
+.ticket-section .place-body {
+    background: white;
+    padding: 0 16px;
+}
+
+.ticket-section .place-heading {
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.ticket-section .place-time {
+    margin-bottom: 15px;
+    color: #757575;
+}
+
+.ticket-section .place-des {
+    margin-bottom: 15px;
+}
+
+.ticket-section .place-buy {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 13px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.content-section .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+.content-section .row .contact-position {
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .col {
+    padding: -1px 8px;
+}
+
+.contact-form .col-half {
+    width: 100%;
+    /* padding: 3px; */
+
+}
+
+.contact-form .form-control {
+    padding: 11px 17px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.content-section .col p {
+    display: block;
+    padding: 4px 0;
+}
+
+.contact-form .form-btn_submit {
+    float: right;
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin: 16px 0;
+}
+
+.contact-form .form-btn_submit:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.map-contact {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 16px;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.footer .social-list a {
+    font-size: 22px;
+    color: #7f7b7b;
+}
+
+.footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.footer .copyright {
+    margin: 16px 0;
+    color: #7f7b7b;
+}
+
+
+@media (max-width: 739px) {
+    .nav>li {
+        display: block;
+
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .header {
+        overflow: hidden;
+    }
+
+    .header .btn-search {
+        display: none;
+        padding: 0px 14px;
+
+    }
+
+    .header .icon-menu {
+        display: block;
+    }
+
+    .header .btn-menu {
+        padding: 15px 23px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav .subnav {
+        position: initial;
+        padding: 6px 38px;
+        background: #ddd;
+    }
+
+    .nav>li:first-child {
+        display: inline-block;
+    }
+
+    .content .members-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .member-item {
+        width: 80%;
+    }
+
+    .content .member-img {
+        width: 100%;
+    }
+
+    .ticket-section .places-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket-section .places-item {
+        width: 100%;
+    }
+
+    .content-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form .col-half {
+        padding-top: 5px;
+    }
+
+    .content-section .row {
+        padding: 0px
+    }
+}
